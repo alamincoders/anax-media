@@ -22,3 +22,12 @@
   border-bottom: 2px solid #23C1C1;
   color: #23C1C1;
 }
+
+/*  overview section  */
+.overviewCard {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.overviewCard:hover {
+  box-shadow: 0px 12px 20px -12px rgba(16, 24, 40, 0.12), 0px 12px 20px -12px rgba(16, 24, 40, 0.12);
+}
