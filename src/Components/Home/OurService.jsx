@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Keyboard } from 'swiper/modules';
+import {Autoplay, Keyboard, Navigation} from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -35,11 +35,11 @@ const OurService = () => {
                         enabled: true,
                     }}
                     navigation={{
-                        nextEl: ".popular-product-button-next-slide",
-                        prevEl: ".popular-product-button-prev-slide",
+                        nextEl: ".service-next-slide",
+                        prevEl: ".service-prev-slide",
                     }}
                     autoplay={true}
-                    modules={[Autoplay, Keyboard]}
+                    modules={[Autoplay, Keyboard, Navigation]}
                     className="relative group"
                 >
                     {serviceData && serviceData.map((service, index) => (
@@ -47,7 +47,7 @@ const OurService = () => {
                             <div className='w-full rounded-[12px] bg-[#FBFBFB] cursor-pointer'>
                                 <img src={service.image} alt={service.title} className='w-full h-[250px] object-cover rounded-t-[12px]'/>
                                 <div className='p-[15px]'>
-                                    <h1 className='text-[24px] leading-[36px] font-[700] mb-[10px] text-left'>{service.title}</h1>
+                                    <h1 className='text-[24px] leading-[36px] font-[600] mb-[10px] text-left'>{service.title}</h1>
                                     <p className='text-[16px] font-[400] leading-[24px] text-[#585858] text-left'>{service.description}</p>
                                 </div>
                             </div>
@@ -57,10 +57,10 @@ const OurService = () => {
 
                 {serviceData && (
                     <div className='flex items-center gap-[20px] absolute top-[55px] right-12'>
-                        <div ref={prevRef} className={`${swiperArrowStyles} popular-product-button-prev-slide`}>
+                        <div ref={prevRef} className={`${swiperArrowStyles} service-prev-slide hover:bg-primary hover:border-primary hover:text-white`}>
                             <BsChevronLeft size={24} />
                         </div>
-                        <div ref={nextRef} className={`${swiperArrowStyles} popular-product-button-next-slide`} >
+                        <div ref={nextRef} className={`${swiperArrowStyles} service-next-slide hover:bg-primary hover:border-primary hover:text-white`} >
                             <BsChevronRight size={24} />
                         </div>
                     </div>

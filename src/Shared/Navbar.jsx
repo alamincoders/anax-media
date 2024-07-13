@@ -9,7 +9,7 @@ import { styles } from "../Utils/Styles.js";
 // react router dom
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({active}) => {
     const [shadow, setShadow] = useState(false);
 
     useEffect(() => {
@@ -29,25 +29,27 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`flex items-center justify-between px-12 py-4 sticky top-0 bg-white transition-shadow ${shadow ? 'shadow-lg' : ''}`}>
-            <img src="/logo.png" alt="logo" className='w-[120px]' />
+        <nav className={`flex items-center justify-between z-50 px-12 py-4 sticky top-0 bg-white transition-shadow ${shadow ? 'shadow-lg' : ''}`}>
+            <Link to='/'>
+                <img src="/logo.png" alt="logo" className='w-[120px]'/>
+            </Link>
             <ul className='flex items-center gap-[50px]'>
-                <li className='navItem'>
+                <li className={`${active === 1 ? 'text-primary font-[600]' : ''} navItem`}>
                     <Link to='/'>
                         Home
                     </Link>
                 </li>
-                <li className='navItem'>
+                <li className={`${active === 2 ? 'text-primary font-[600]' : ''} navItem`}>
                     <Link to='/about'>
                         About Us
                     </Link>
                 </li>
-                <li className='navItem'>
+                <li className={`${active === 3 ? 'text-primary font-[600]' : ''} navItem`}>
                     <Link to='/services'>
                         Our Services
                     </Link>
                 </li>
-                <li className='navItem'>
+                <li className={`${active === 4 ? 'text-primary font-[600]' : ''} navItem`}>
                     <Link to='/contact'>
                         Contact Us
                     </Link>
