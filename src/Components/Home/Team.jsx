@@ -27,8 +27,8 @@ const Team = () => {
         "text-[30px] z-10 w-[40px] h-[40px] border-[2px] border-borderDark text-black bg-transparent hover:bg-bgDisableDark grid place-items-center duration-500 cursor-pointer";
 
     return (
-        <section className='w-full px-12 py-[40px] relative'>
-            <h1 className='text-[40px] font-[700] leading-[60px] mb-[40px]'>Our Team</h1>
+        <section className='w-full px-6 md:px-12 py-[40px] relative'>
+            <h1 className='text-[25px] md:text-[40px] font-[700] leading-[60px] mb-[40px]'>Our Team</h1>
 
             <div style={{ textAlign: "center" }} className="w-full h-full">
                 <Swiper
@@ -72,7 +72,7 @@ const Team = () => {
                 </Swiper>
 
                 {TeamData && (
-                    <div className='flex items-center gap-[20px] absolute top-[55px] right-12'>
+                    <div className='flex items-center gap-[20px] absolute top-[55px] right-6 md:right-12'>
                         <div ref={prevTeamRef} className={`${swiperArrowStyles} team-prev-slide hover:bg-primary hover:border-primary hover:text-white`}>
                             <BsChevronLeft size={24}/>
                         </div>

@@ -29,7 +29,7 @@ const Navbar = ({active}) => {
     }, []);
 
     return (
-        <nav className={`flex items-center justify-between z-50 px-12 py-4 sticky top-0 bg-white transition-shadow ${shadow ? 'shadow-lg' : ''}`}>
+        <nav className={`items-center hidden lg:flex justify-between z-50 px-12 py-4 sticky top-0 bg-white transition-shadow ${shadow ? 'shadow-lg' : ''}`}>
             <Link to='/'>
                 <img src="/logo.png" alt="logo" className='w-[120px]'/>
             </Link>

@@ -3,9 +3,9 @@ import {styles} from "../../Utils/Styles.js";
 
 const Aboutus = () => {
     return (
-        <section className='py-[40px] w-full flex'>
-            <img src='/aboutus-1.png' alt='image' className='w-[700px]'/>
-            <article className='bg-[#FBFBFB] p-[60px] flex flex-col justify-center'>
+        <section className='md:py-[40px] w-full grid-cols-1 grid lg:grid-cols-2'>
+            <img src='/aboutus-1.png' alt='image' className='w-full mx-auto'/>
+            <article className='bg-[#FBFBFB] p-[30px] md:p-[60px] flex flex-col justify-center'>
                 <h1 className='text-[40px] font-[700] leading-[60px]'>About Us</h1>
                 <p className='text-[16px] font-[400] leading-[24px] text-[#585858] mt-[5px] mb-[30px] w-[80%]'>
                     Our team of experienced professionals is committed to delivering top-notch media solutions that leave a lasting impact on your target audience.

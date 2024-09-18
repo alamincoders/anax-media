@@ -17,8 +17,8 @@ const OfficeLocation = () => {
         "text-[30px] z-10 w-[40px] h-[40px] border-[2px] border-borderDark text-black bg-transparent hover:bg-bgDisableDark grid place-items-center duration-500 cursor-pointer";
 
     return (
-        <section className='w-full px-12 py-[40px] relative'>
-            <h1 className='text-[40px] font-[700] leading-[60px] mb-[40px]'>Visit Our Office</h1>
+        <section className='w-full px-6 lg:px-12 py-[40px] relative'>
+            <h1 className='text-[25px] md:text-[40px] font-[700] leading-[60px] mb-[40px]'>Visit Our Office</h1>
 
             <div style={{textAlign: "center"}} className="w-full h-full ">
                 <Swiper
@@ -50,7 +50,7 @@ const OfficeLocation = () => {
                 </Swiper>
 
                 {officeLocationData && (
-                    <div className='flex items-center gap-[20px] absolute top-[55px] right-12'>
+                    <div className='flex items-center gap-[20px] absolute top-[55px] right-6 lg:right-12'>
                         <div ref={prevRef}
                              className={`${swiperArrowStyles} service-prev-slide hover:bg-primary hover:border-primary hover:text-white`}>
                             <BsChevronLeft size={24}/>

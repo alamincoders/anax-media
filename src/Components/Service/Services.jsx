@@ -10,7 +10,7 @@ const Service = () => {
     return (
         <section className='w-full py-[60px]'>
             {/* slider */}
-            <div style={{textAlign: "center"}} className="w-full  px-12  h-full">
+            <div style={{textAlign: "center"}} className="w-full px-6 md:px-12  h-full">
                 <Swiper
                     rewind={true}
                     breakpoints={SliderBreakPoint}
@@ -36,7 +36,7 @@ const Service = () => {
                 </Swiper>
             </div>
 
-            <div className='grid grid-cols-3 gap-[20px] border-t border-[#AEAEAE] mt-[50px] pt-[50px]  px-12 '>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] border-t border-[#AEAEAE] mt-[50px] pt-[50px] px-6 md:px-12 '>
                 {
                     AllServicesData && AllServicesData?.map((service, index)=> (
                         <div className='border border-[#AEAEAE] rounded-[8px] p-[15px]'>

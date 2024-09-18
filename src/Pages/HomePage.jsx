@@ -13,11 +13,13 @@ import Team from '../Components/Home/Team.jsx'
 import WhyChooseUs from '../Components/Home/WhyChooseUs.jsx'
 import Testimonials from '../Components/Home/Testimonials.jsx'
 import NewsLetter from '../Components/Home/NewsLetter.jsx'
+import MobileNavbar from "../Shared/MobileNavbar.jsx";
 
 const HomePage = () => {
     return (
-        <>
+        <div className='overflow-hidden'>
             <Navbar active={1}/>
+            <MobileNavbar acitve={1}/>
             <Hero/>
             <Company/>
             <Overview/>
@@ -29,7 +31,7 @@ const HomePage = () => {
             <Testimonials/>
             <NewsLetter/>
             <Footer/>
-        </>
+        </div>
     );
 };
 

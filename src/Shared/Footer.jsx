@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className='w-full px-12 py-[70px] flex flex-col gap-[20px]'>
-            <div className='flex justify-between w-full border-b border-[#B7B7B7] pb-[30px]'>
-                <div className='w-[25%]'>
+        <footer className='w-full px-6 lg:px-12 py-[70px] flex flex-col gap-[20px]'>
+            <div className='flex justify-between w-full flex-wrap gap-[40px] md:gap-[30px] border-b border-[#B7B7B7] pb-[30px]'>
+                <div className='w-full md:w-[25%]'>
                     <img src='/logo.png' alt='logo' className='w-[170px]'/>
                     <p className='text-[16px] font-[400] leading-[24px] text-[#585858] mt-[10px]'>Lorem ipsum dolor sit
                         amet, consectetur adipisicing elit. Harum, maiores esse temporibus actium quas soluta quis sed
@@ -26,7 +26,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-4 gap-[40px]'>
+                <div className='grid grid-cols-2 lg:grid-cols-4 gap-[40px]'>
                     <div>
                         <h3 className='text-[20px] leading-[22px] font-[600]'>Company</h3>
                         <ul className='flex flex-col gap-[5px] footerUl'>
@@ -66,10 +66,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex items-center justify-between w-full'>
+            <div className='flex items-center flex-wrap gap-[20px] lg:gap-0 justify-center lg:justify-between w-full'>
                 <p className='text-[#454545] font-[400] leading-[18px] text-[14px]'>&copy; Copyright all reserve by Anax Media</p>
 
-                <div className='flex items-center gap-[50px] text-[#454545] font-[400] leading-[18px] text-[14px]'>
+                <div className='flex flex-wrap items-center gap-[20px] justify-center md:justify-start md:gap-[50px] text-[#454545] font-[400] leading-[18px] text-[14px]'>
                     <a>Cookies Notice</a>
                     <a>Privacy Notice</a>
                     <a>Terms and Conditions</a>

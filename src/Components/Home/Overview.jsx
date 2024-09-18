@@ -2,7 +2,7 @@ import React from 'react';
 
 const Overview = () => {
     return (
-        <section className='w-full py-[80px] px-12 flex justify-between gap-[20px]'>
+        <section className='w-full py-[80px] px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px]'>
             <div className='border border-secondary p-[20px] rounded-[8px] overviewCard'>
                 <div className='w-[70px] h-[70px] rounded-full bg-secondary flex items-center justify-center'>
                     <img src='/Icons/stategyIcon.png' alt='icon' className='w-[22px] h-[22px]'/>
